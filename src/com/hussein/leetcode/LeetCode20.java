@@ -12,8 +12,6 @@ import java.util.Stack;
     左括号必须以正确的顺序闭合。
     注意空字符串可被认为是有效字符串。
 
- * @author: hsc13668
- * @E-mail：housongchen@noahgroup.com
  * @Date 2019/10/7 14:57
  */
 public class LeetCode20 {
@@ -28,8 +26,6 @@ public class LeetCode20 {
      * @Description: 利用栈，有点类似分治的思想，开符号入栈，遇到闭符号出栈，
      *              如果是有效字符串的话去掉一组符号，他的子结构也应该是有效字符串
      *              并且有效字符串的结构一定是成对的，最终栈内一定为空
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/10/7-16:10
      */
@@ -37,7 +33,7 @@ public class LeetCode20 {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            // @Description: 非闭符号，入栈 hsc13668
+            // @Description: 非闭符号，入栈
             if (mappings.containsKey(c)) {
                 char top = stack.isEmpty() ? '#' : stack.pop();
                 if (top != mappings.get(c)) {
@@ -56,9 +52,7 @@ public class LeetCode20 {
     /**
      * @Description: 其实还是利用了栈的思想，但是结构更加简单，通过数组去维护一个栈
      *              因为我只需要记录头节点，不需要记录下一节点，所以相比用java栈的执行速度会更快
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
-     * @return: 
+     * @return:
      * @Date 2019/10/8-16:01
      */
     public static boolean isValid2(String s) {
@@ -99,8 +93,6 @@ public class LeetCode20 {
 
     /**
      * @Description: 替换通过hash检索而已，但其实还没有hash检索快哦，哈哈哈哈
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/10/8-16:30
      */

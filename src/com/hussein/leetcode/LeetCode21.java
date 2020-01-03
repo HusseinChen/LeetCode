@@ -4,16 +4,12 @@ package com.hussein.leetcode;
  * @Description: 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的
  *      输入：1->2->4, 1->3->4
         输出：1->1->2->3->4->4
- * @author: hsc13668
- * @E-mail：housongchen@noahgroup.com
  * @Date 2019/10/8 16:34
  */
 public class LeetCode21 {
 
     /**
      * @Description: 笨方法（迭代法）-设立一个目标链，通过一个哑节点来漂移，比较目标链最后一个节点的大小后入链
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/10/8-16:43
      */
@@ -47,8 +43,6 @@ public class LeetCode21 {
 
     /**
      * @Description: 迭代法（优化）-其实不需要创建临时链来防止链表顺序打乱
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/11/4-14:13
      */
@@ -72,8 +66,6 @@ public class LeetCode21 {
 
     /**
      * @Description: 递归法
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/11/1-13:50
      */
@@ -111,8 +103,6 @@ public class LeetCode21 {
 
     /**
      * @Description: 结构
-     * @author: hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @Date 2019/10/8 16:34
      */
     public static class ListNode {

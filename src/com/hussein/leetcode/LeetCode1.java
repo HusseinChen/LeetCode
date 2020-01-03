@@ -4,8 +4,6 @@ import java.util.HashMap;
 
 /**
  * @Description: Two Sum 两数之和; difficult:easy
- * @author: hsc13668
- * @E-mail：housongchen@noahgroup.com
  * @Date 2019/2/15 18:20
  */
 public class LeetCode1 {
@@ -18,8 +16,6 @@ public class LeetCode1 {
 
     /**
      * @Description: 解法一：耗时：11ms，超过73%的JAVA提交
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/2/15-18:58
      */
@@ -39,8 +35,6 @@ public class LeetCode1 {
 
     /**
      * @Description: 解法二：耗时：5ms，超过95.95%的Java提交
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/9/4-15:33
      */

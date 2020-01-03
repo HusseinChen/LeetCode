@@ -11,16 +11,12 @@ package com.hussein.leetcode;
         输入: -121
         输出: false
         解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
- * @author: hsc13668
- * @E-mail：housongchen@noahgroup.com
  * @Date 2019/9/23 15:09
  */
 public class LeetCode9 {
 
     /**
      * @Description: 整数反转后比较大小
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/9/23-15:17
      */
@@ -43,8 +39,6 @@ public class LeetCode9 {
 
     /**
      * @Description: 官方解：只反转一半数字，比较反转一半后的数字
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/9/23-15:32
      */

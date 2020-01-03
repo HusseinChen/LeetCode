@@ -2,16 +2,12 @@ package com.hussein.leetcode;
 
 /**
  * @Description: 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
- * @author: hsc13668
- * @E-mail：housongchen@noahgroup.com
  * @Date 2019/9/23 14:19
  */
 public class LeetCode7 {
 
     /**
      * @Description: 根据求余每次都取个位数
-     * @author : hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @return:
      * @Date 2019/9/23-14:20
      */

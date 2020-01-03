@@ -2,8 +2,6 @@ package com.hussein.leetcode;
 
 /**
  * @Description: Add Two Numbers 两数相加；diffcult：mid
- * @author: hsc13668
- * @E-mail：housongchen@noahgroup.com
  * @Date 2019/9/4 16:03
  */
 public class LeetCode2 {
@@ -46,8 +44,6 @@ public class LeetCode2 {
 
     /**
      * @Description: 数据结构定义
-     * @author: hsc13668
-     * @E-mail：housongchen@noahgroup.com
      * @Date 2019/9/4 16:21
      */
     public static class ListNode {
