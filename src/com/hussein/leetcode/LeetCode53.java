@@ -21,6 +21,8 @@ public class LeetCode53 {
         dp[0] = nums[0];
         int max = nums[0];
         for (int i = 1; i < nums.length; i++) {
+            // @Description: 说白了就是加上第i个元素的和还没i元素本身大，所以应该从i元素开始继续计算
+            // 如果和比元素本身要大，那么证明之前有元素对和起到了增益效果，我们还应该以之前的元素开始的那个和计算 12:07 43138
             dp[i] = Math.max(dp[i- 1] + nums[i], nums[i]);
             if (max < dp[i]) {
                 max = dp[i];
@@ -29,8 +31,38 @@ public class LeetCode53 {
         return max;
     }
 
+    /**
+     * @param a
+     * @Description: 动态规划2，空间复杂度会小很多，因为这个方法是直接在原数组上修改的，没有占用额外空间
+     *              只有一个额外的maxSum对象
+     * @author : 43138
+     * @E-mail：43138199@qq.com
+     * @Date: 2020/1/30 11:51
+     * @Return: a
+    */
+    public static int maxSubArray2(int[] nums) {
+        int maxSum = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i - 1] > 0) {
+                nums[i] += nums[i - 1];
+            }
+            maxSum = Math.max(nums[i], maxSum);
+        }
+        return maxSum;
+    }
+
+    /**
+     * @param a
+     * @Description: 只写了动态规划算法，但其实还有贪心算法和分治法
+     *              贪心算法其实和动态规划很像，我每一步都算，但只取最优解
+     *              分治法有点难理解，在此省略
+     * @author : 43138
+     * @E-mail：43138199@qq.com
+     * @Date: 2020/1/30 11:37
+     * @Return: a
+    */
     public static void main(String[] args) {
         int[] nums = new int[]{-2,1,-3,4,-1,2,1,-5,4};
-        maxSubArray1(nums);
+        System.out.println(maxSubArray1(nums));
     }
 }
