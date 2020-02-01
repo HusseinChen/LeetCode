@@ -1,4 +1,4 @@
-package com.hussein.leetcode;
+package com.hussein.leetcode.easy;
 
 /**
  * @Description: 给定一个二叉树，找出其最大深度。

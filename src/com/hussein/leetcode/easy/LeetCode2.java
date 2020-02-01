@@ -1,4 +1,4 @@
-package com.hussein.leetcode;
+package com.hussein.leetcode.easy;
 
 /**
  * @Description: Add Two Numbers 两数相加；diffcult：mid
