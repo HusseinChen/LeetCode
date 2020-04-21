@@ -22,6 +22,7 @@ public class ListNode {
             sb.append(next.next.val);
             next = next.next;
         }
+        System.out.println(sb.toString());
         return sb.toString();
     }
 

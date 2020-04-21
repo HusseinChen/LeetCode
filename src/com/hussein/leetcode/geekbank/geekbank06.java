@@ -38,6 +38,25 @@ public class geekbank06 {
         return true;
     }
 
+    /**
+     * @Description: 链表反转
+     * @author : hsc13668
+     * @return:
+     * @Date 2020/4/20-20:13
+     */
+    public static String linkedReverse(ListNode head) {
+        ListNode curr = head;
+        ListNode prev = null;
+        ListNode nextp = null;
+        while (curr != null) {
+            nextp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = nextp;
+        }
+        return prev.print();
+    }
+
     public static void main(String[] args) {
         ListNode a = new ListNode(1);
         ListNode b = new ListNode(2);
@@ -46,6 +65,7 @@ public class geekbank06 {
         c.next = d;
         b.next = c;
         a.next = b;
-        isPalindrome(a);
+//        isPalindrome(a);
+        linkedReverse(a);
     }
 }
