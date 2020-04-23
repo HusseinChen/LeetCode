@@ -8,7 +8,7 @@ import com.hussein.leetcode.model.ListNode;
  * @E-mail：
  * @Date 2020/4/20 16:35
  */
-public class geekbank06 {
+public class geekbang06 {
 
     public static boolean isPalindrome(ListNode head) {
         ListNode slow = head;
@@ -38,21 +38,15 @@ public class geekbank06 {
         return true;
     }
 
-    /**
-     * @Description: 链表反转
-     * @author : hsc13668
-     * @return:
-     * @Date 2020/4/20-20:13
-     */
-    public static String linkedReverse(ListNode head) {
+    public static String reverse(ListNode head) {
         ListNode curr = head;
         ListNode prev = null;
-        ListNode nextp = null;
+        ListNode next = null;
         while (curr != null) {
-            nextp = curr.next;
+            next = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = nextp;
+            curr = next;
         }
         return prev.print();
     }
@@ -66,6 +60,6 @@ public class geekbank06 {
         b.next = c;
         a.next = b;
 //        isPalindrome(a);
-        linkedReverse(a);
+        reverse(a);
     }
 }
