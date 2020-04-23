@@ -15,8 +15,8 @@ public class geekbang11 {
         }
         for (int i = 0; i < length; i++) {
             String a = "";
-            for (int i1 : array) {
-                a = a + i1;
+            for (int num : array) {
+                a = a + num;
             }
             System.out.println(a);
             boolean hasChange = false;
