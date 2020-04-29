@@ -35,6 +35,22 @@ public class geekbang11 {
         return array;
     }
 
+    /**
+     * @author : hsc13668
+     * @return:
+     * @Date 2020/4/29-15:02
+     */
+    public static int[] insertSort(int[] array) {
+        if (array.length <= 1) {
+            return array;
+        }
+        for (int i = 1; i < array.length; ++i) {
+            int value = array[i];
+
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         int[] array = new int[]{4,5,3,6,1,1};
         int[] bubbleSort = bubbleSort(array);
